@@ -40,13 +40,13 @@ try:
         try:
             # Recognize speech using Google Speech Recognition
             value = r.recognize_google(audio)
-            print("\n{}".format(value))
+            print("\n>>> IN:\n{}".format(value))
 
             # Send the transcribed text to the LLM
             llm_response = get_llm_response(value)
 
             # Print the response
-            print("\nAssistant: {}".format(llm_response))
+            print("\n<<< OUT:\n{}".format(llm_response))
 
         except sr.UnknownValueError:
             print("Oops! Didn't catch that")
