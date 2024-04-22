@@ -13,3 +13,8 @@ ollama:
 
 conversation:
   initial_prompt: "Hey!"
+
+ui:
+  width: 320
+  height: 240
+  fontSize: 24
