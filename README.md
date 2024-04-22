@@ -1,3 +1,7 @@
+
+[![Uno demo](https://img.youtube.com/vi/eYxorWUVw1g/0.jpg)](https://www.youtube.com/watch?v=eYxorWUVw1g)
+
+
 # Uno: Voice-Controlled AI Assistant
 
 Uno is a voice-controlled AI assistant that uses the **Ollama** language model and **Whisper** speech recognition to provide an interactive conversational experience. It allows users to communicate with the AI assistant using natural language through speech input and receives responses in both text and speech format.
