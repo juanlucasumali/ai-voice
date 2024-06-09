@@ -31,57 +31,54 @@ Uno is a voice-controlled AI assistant that uses the **Ollama** language model a
 
 ## Installation
 
-1. Clone the repository:
+1. Install [Ollama](https://ollama.com/).
+2. Download the llama model using the `ollama pull llama` command.
+3. Download the `base.en` OpenAI Whisper Model [here](https://github.com/openai/whisper/discussions/63#discussioncomment-3798552).
+4. Clone and `cd` into the repository:
 
    ```bash
    git clone https://github.com/your-username/uno.git
    ```
-
-2. Install the required dependencies:
+5. Place the downloaded `base.en` Whisper model into a /whisper directory in the repository's root folder.
+6. Install the required dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
+   Or, if you use pip3:
+    ```bash
+   pip3 install -r requirements.txt
+   ```
 
-3. Set up the configuration file:
-
-   - Create a file named `uno.yaml` in the project directory.
-   - Configure the necessary settings such as API endpoints, model paths, and initial prompts in the YAML file.
+7. Configure `uno.yaml` in the project directory. Adjust the necessary settings such as API endpoints, model paths, and initial prompts in the YAML file.
 
 ## Usage
 
 1. Run the Uno application:
 
    ```bash
-   python uno.py
+   python main.py
+   ```
+   Or:
+      ```bash
+   python3 main.py
    ```
 
-2. The application window will open, and Uno will initialize the necessary components.
+3. The application window will open, and Uno will initialize the necessary components.
 
-3. Press and hold the `Space` key to start recording your speech input.
+4. Press and hold the `Space` key to start recording your speech input.
 
-4. Speak your query or command while holding the `Space` key.
+5. Speak your query or command while holding the `Space` key.
 
-5. Release the `Space` key when you finish speaking.
+6. Release the `Space` key when you finish speaking.
 
-6. Uno will process your speech input, send it to the Ollama API for generating a response, and then convert the response to speech output.
+7. Uno will process your speech input, send it to the Ollama API for generating a response, and then convert the response to speech output.
 
-7. The response will be displayed on the application window and played back as speech.
+8. The response will be displayed on the application window and played back as speech.
 
-8. To stop the speech playback, press the `S` key.
+9. To stop the speech playback, press the `S` key.
 
-9. To exit the application, press the `Esc` key.
-
-## Configuration
-
-The `uno.yaml` file allows you to customize various settings for the Uno application. Here are the main configuration options:
-
-- `messages`: Customize the messages displayed on the application window.
-- `conversation`: Set the initial prompt for the conversation with the AI assistant.
-- `ollama`: Configure the Ollama API endpoint and model settings.
-- `whisperRecognition`: Specify the path to the Whisper model and the language for speech recognition.
-
-Please refer to the `uno.yaml` file for more details on each configuration option.
+10. To exit the application, press the `Esc` key.
 
 ## Contributing
 
